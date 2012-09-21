@@ -1,0 +1,17 @@
+{
+  "name": "Gamework-new",
+  "version": "0.0.0",
+  "description": "A crappy game framework?",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "send": "~0.0.4",
+    "ejs": "~0.8.3"
+  },
+  "repository": "",
+  "author": "Joshua K. Farrar <joshua@uber1337hax.com>",
+  "license": "MIT"
+}

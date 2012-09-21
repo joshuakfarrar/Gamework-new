@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<title>Gamework: Browser Game Framework</title>
+	</head>
+	<body>
+		<noscript>
+			<div>
+				You need to enable JavaScript to use Gamework.
+			</div>
+		</noscript>
+		<div id="container">
+			<div id="canvas">
+				<canvas id="background" width="800px" height="600px"></canvas>
+				<canvas id="entities" width="800px" height="600px"></canvas>
+				<canvas id="ui" width="800px" height="600px"></canvas>
+				<canvas id="foreground" class="clickable" width="800px" height="600px"></canvas>
+			</div>
+		</div>
+                <script src="js/lib/game-shim.js"></script>
+		<script data-main="js/home" src="js/lib/require-jquery.js"></script>
+	</body>
+</html>
