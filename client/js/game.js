@@ -43,17 +43,13 @@ define(["renderer", "map"], function(Renderer, Map) {
       console.log('Tick');
       this.currentTime = new Date().getTime();
 
-      console.log('Testing game shim..');
-      //console.log(this.renderer.canvas.fullscreenEnabled);
-      console.log(document.fullscreenEnabled);
-
-      //document.addEventListener('fullscreenchange', function() { console.log('Change!'); }, false);
-      /* this.renderer.canvas.addEventListener('fullscreenchange', function() {
-        console.log('Fullscreen change?');
-      }); */
-
       if (this.connected) {
         console.log('Tock');
+      }
+
+      if (!this.isStopped) {
+        // V-Sync'd frame animations
+        window.requestAnimationFrame(this.tick.bind(this));
       }
     }
   });
